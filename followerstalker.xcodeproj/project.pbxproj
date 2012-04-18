@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE1E6DD8153E4BCC008A841B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E6DD7153E4BCC008A841B /* Cocoa.framework */; };
+		FE1E6DDA153E4BCC008A841B /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E6DD9153E4BCC008A841B /* MacRuby.framework */; };
+		FE1E6DE3153E4BCC008A841B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DE1153E4BCC008A841B /* InfoPlist.strings */; };
+		FE1E6DE5153E4BCC008A841B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1E6DE4153E4BCC008A841B /* main.m */; };
+		FE1E6DEA153E4BCC008A841B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DE8153E4BCC008A841B /* MainMenu.xib */; };
+		FE1E6DED153E4BCC008A841B /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DEC153E4BCC008A841B /* rb_main.rb */; };
+		FE1E6DEF153E4BCC008A841B /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DEE153E4BCC008A841B /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE1E6DDC153E4BCC008A841B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1E6DCA153E4BCC008A841B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE1E6DD2153E4BCC008A841B;
+			remoteInfo = followerstalker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE1E6DD3153E4BCC008A841B /* followerstalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = followerstalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1E6DD7153E4BCC008A841B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FE1E6DD9153E4BCC008A841B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		FE1E6DE0153E4BCC008A841B /* followerstalker-Info.plist */ = {isa = PBXFileReference; path = "followerstalker-Info.plist"; sourceTree = "<group>"; };
+		FE1E6DE2153E4BCC008A841B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE1E6DE4153E4BCC008A841B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE1E6DE6153E4BCC008A841B /* followerstalker-Prefix.pch */ = {isa = PBXFileReference; path = "followerstalker-Prefix.pch"; sourceTree = "<group>"; };
+		FE1E6DE9153E4BCC008A841B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FE1E6DEC153E4BCC008A841B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		FE1E6DEE153E4BCC008A841B /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE1E6DD0153E4BCC008A841B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1E6DD8153E4BCC008A841B /* Cocoa.framework in Frameworks */,
+				FE1E6DDA153E4BCC008A841B /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE1E6DC8153E4BCC008A841B = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DDE153E4BCC008A841B /* followerstalker */,
+				FE1E6DD6153E4BCC008A841B /* Frameworks */,
+				FE1E6DD4153E4BCC008A841B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE1E6DD4153E4BCC008A841B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DD3153E4BCC008A841B /* followerstalker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE1E6DD6153E4BCC008A841B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DD7153E4BCC008A841B /* Cocoa.framework */,
+				FE1E6DD9153E4BCC008A841B /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE1E6DDE153E4BCC008A841B /* followerstalker */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DEE153E4BCC008A841B /* AppDelegate.rb */,
+				FE1E6DE7153E4BCC008A841B /* Resources */,
+				FE1E6DEB153E4BCC008A841B /* Other Sources */,
+				FE1E6DDF153E4BCC008A841B /* Supporting Files */,
+			);
+			path = followerstalker;
+			sourceTree = "<group>";
+		};
+		FE1E6DDF153E4BCC008A841B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DE0153E4BCC008A841B /* followerstalker-Info.plist */,
+				FE1E6DE1153E4BCC008A841B /* InfoPlist.strings */,
+				FE1E6DE4153E4BCC008A841B /* main.m */,
+				FE1E6DE6153E4BCC008A841B /* followerstalker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE1E6DE7153E4BCC008A841B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DE8153E4BCC008A841B /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FE1E6DEB153E4BCC008A841B /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DEC153E4BCC008A841B /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		FE1E6DDB153E4BCC008A841B /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = FE1E6DF5153E4BCC008A841B /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				FE1E6DDD153E4BCC008A841B /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		FE1E6DD2153E4BCC008A841B /* followerstalker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE1E6DF2153E4BCC008A841B /* Build configuration list for PBXNativeTarget "followerstalker" */;
+			buildPhases = (
+				FE1E6DCF153E4BCC008A841B /* Sources */,
+				FE1E6DD0153E4BCC008A841B /* Frameworks */,
+				FE1E6DD1153E4BCC008A841B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = followerstalker;
+			productName = followerstalker;
+			productReference = FE1E6DD3153E4BCC008A841B /* followerstalker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE1E6DCA153E4BCC008A841B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = None;
+			};
+			buildConfigurationList = FE1E6DCD153E4BCC008A841B /* Build configuration list for PBXProject "followerstalker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE1E6DC8153E4BCC008A841B;
+			productRefGroup = FE1E6DD4153E4BCC008A841B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE1E6DD2153E4BCC008A841B /* followerstalker */,
+				FE1E6DDB153E4BCC008A841B /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE1E6DD1153E4BCC008A841B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1E6DE3153E4BCC008A841B /* InfoPlist.strings in Resources */,
+				FE1E6DEA153E4BCC008A841B /* MainMenu.xib in Resources */,
+				FE1E6DED153E4BCC008A841B /* rb_main.rb in Resources */,
+				FE1E6DEF153E4BCC008A841B /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE1E6DCF153E4BCC008A841B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1E6DE5153E4BCC008A841B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE1E6DDD153E4BCC008A841B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE1E6DD2153E4BCC008A841B /* followerstalker */;
+			targetProxy = FE1E6DDC153E4BCC008A841B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE1E6DE1153E4BCC008A841B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1E6DE2153E4BCC008A841B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE1E6DE8153E4BCC008A841B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1E6DE9153E4BCC008A841B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE1E6DF0153E4BCC008A841B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FE1E6DF1153E4BCC008A841B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FE1E6DF3153E4BCC008A841B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "followerstalker/followerstalker-Prefix.pch";
+				INFOPLIST_FILE = "followerstalker/followerstalker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE1E6DF4153E4BCC008A841B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "followerstalker/followerstalker-Prefix.pch";
+				INFOPLIST_FILE = "followerstalker/followerstalker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FE1E6DF6153E4BCC008A841B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FE1E6DF7153E4BCC008A841B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE1E6DCD153E4BCC008A841B /* Build configuration list for PBXProject "followerstalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1E6DF0153E4BCC008A841B /* Debug */,
+				FE1E6DF1153E4BCC008A841B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE1E6DF2153E4BCC008A841B /* Build configuration list for PBXNativeTarget "followerstalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1E6DF3153E4BCC008A841B /* Debug */,
+				FE1E6DF4153E4BCC008A841B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE1E6DF5153E4BCC008A841B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1E6DF6153E4BCC008A841B /* Debug */,
+				FE1E6DF7153E4BCC008A841B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE1E6DCA153E4BCC008A841B /* Project object */;
+}
