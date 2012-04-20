@@ -19,7 +19,7 @@ class Run
             account_id = row["id"] 
         end
         
-        db.execute( "INSERT into run (runDate, accountid) values (?,?)", DateTime.now.to_s, account_id ) 
+        db.execute( "INSERT into run (run_date, account_id) values (?,?)", DateTime.now.to_s, account_id ) 
         
         run_id = db.last_insert_row_id
         
@@ -37,8 +37,8 @@ class Run
         db.execute( "SELECT r.* from run r join account a on a.id = r.accountid where a.handle = ?", account_handle ) do |row|
             temp_run = Run.new
             temp_run.id = row["id"]
-            temp_run.date_run = row["runDate"]
-            temp_run.account_id = row["accountid"]
+            temp_run.date_run = row["run_date"]
+            temp_run.account_id = row["account_id"]
             runs << temp_run
         end
         puts "done loading runs"
@@ -59,10 +59,10 @@ class Run
         db.results_as_hash = true
         previous_run = Run.new
         puts "loading previous run"
-        db.execute( "SELECT * from run where id < ? and accountid = ? order by id desc limit 1", self.id, self.account_id ) do |row|
+        db.execute( "SELECT * from run where id < ? and account_id = ? order by id desc limit 1", self.id, self.account_id ) do |row|
             previous_run.id = row["id"]
-            previous_run.date_run = row["runDate"]
-            previous_run.account_id = row["accountid"]
+            previous_run.date_run = row["run_date"]
+            previous_run.account_id = row["account_id"]
         end
         puts "done loading previous run"
         db.close
