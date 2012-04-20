@@ -7,3 +7,14 @@
 #
 
 
+
+class RunDetailWindowController < NSWindowController
+    attr_accessor :titleLabel, :run
+    
+    def windowDidLoad
+        super
+        
+        titleLabel.setStringValue "From the code!" + run.id.to_s        
+    end
+    
+end

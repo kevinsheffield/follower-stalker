@@ -14,6 +14,16 @@
 		FE1E6DEA153E4BCC008A841B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DE8153E4BCC008A841B /* MainMenu.xib */; };
 		FE1E6DED153E4BCC008A841B /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DEC153E4BCC008A841B /* rb_main.rb */; };
 		FE1E6DEF153E4BCC008A841B /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DEE153E4BCC008A841B /* AppDelegate.rb */; };
+		FE1E6DFE153E4E20008A841B /* FollowListWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DFD153E4E20008A841B /* FollowListWindow.xib */; };
+		FE1E6E00153E4E6D008A841B /* FollowListWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6DFF153E4E6D008A841B /* FollowListWindowController.rb */; };
+		FE1E6E06153F74F6008A841B /* Follower.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6E05153F74F6008A841B /* Follower.rb */; };
+		FE1E6E3C153FA0AA008A841B /* FollowerStalkerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE1E6E3A153FA0AA008A841B /* FollowerStalkerModel.xcdatamodeld */; };
+		FE1E6E42153FB0AA008A841B /* followerstalker.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FE1E6E41153FB0AA008A841B /* followerstalker.sqlite */; };
+		FE85C60215410D3E00C9376B /* RunDetailWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE85C60115410D3E00C9376B /* RunDetailWindow.xib */; };
+		FE85C60715410F1500C9376B /* RunDetailWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE85C60615410F1500C9376B /* RunDetailWindowController.rb */; };
+		FE85C6091541115E00C9376B /* Account.rb in Resources */ = {isa = PBXBuildFile; fileRef = FE85C6081541115E00C9376B /* Account.rb */; };
+		FEC20333153FC9C600FE242B /* TwitterWrapper.rb in Resources */ = {isa = PBXBuildFile; fileRef = FEC20332153FC9C600FE242B /* TwitterWrapper.rb */; };
+		FEC2033615403FE100FE242B /* Run.rb in Resources */ = {isa = PBXBuildFile; fileRef = FEC2033515403FE100FE242B /* Run.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +40,23 @@
 		FE1E6DD3153E4BCC008A841B /* followerstalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = followerstalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1E6DD7153E4BCC008A841B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FE1E6DD9153E4BCC008A841B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		FE1E6DE0153E4BCC008A841B /* followerstalker-Info.plist */ = {isa = PBXFileReference; path = "followerstalker-Info.plist"; sourceTree = "<group>"; };
+		FE1E6DE0153E4BCC008A841B /* followerstalker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "followerstalker-Info.plist"; sourceTree = "<group>"; };
 		FE1E6DE2153E4BCC008A841B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE1E6DE4153E4BCC008A841B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FE1E6DE6153E4BCC008A841B /* followerstalker-Prefix.pch */ = {isa = PBXFileReference; path = "followerstalker-Prefix.pch"; sourceTree = "<group>"; };
+		FE1E6DE6153E4BCC008A841B /* followerstalker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "followerstalker-Prefix.pch"; sourceTree = "<group>"; };
 		FE1E6DE9153E4BCC008A841B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FE1E6DEC153E4BCC008A841B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		FE1E6DEE153E4BCC008A841B /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		FE1E6DFD153E4E20008A841B /* FollowListWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowListWindow.xib; sourceTree = "<group>"; };
+		FE1E6DFF153E4E6D008A841B /* FollowListWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FollowListWindowController.rb; sourceTree = "<group>"; };
+		FE1E6E05153F74F6008A841B /* Follower.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Follower.rb; sourceTree = "<group>"; };
+		FE1E6E3B153FA0AA008A841B /* FollowerStalkerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FollowerStalkerModel.xcdatamodel; sourceTree = "<group>"; };
+		FE1E6E41153FB0AA008A841B /* followerstalker.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = followerstalker.sqlite; sourceTree = "<group>"; };
+		FE85C60115410D3E00C9376B /* RunDetailWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunDetailWindow.xib; sourceTree = "<group>"; };
+		FE85C60615410F1500C9376B /* RunDetailWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = RunDetailWindowController.rb; sourceTree = "<group>"; };
+		FE85C6081541115E00C9376B /* Account.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Account.rb; sourceTree = "<group>"; };
+		FEC20332153FC9C600FE242B /* TwitterWrapper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = TwitterWrapper.rb; sourceTree = "<group>"; };
+		FEC2033515403FE100FE242B /* Run.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Run.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +101,12 @@
 		FE1E6DDE153E4BCC008A841B /* followerstalker */ = {
 			isa = PBXGroup;
 			children = (
+				FE85C60515410ED700C9376B /* Run Detail UI */,
+				FE85C60415410ECE00C9376B /* Models */,
+				FE1E6E41153FB0AA008A841B /* followerstalker.sqlite */,
+				FE1E6DFC153E4DBF008A841B /* Follow List UI */,
 				FE1E6DEE153E4BCC008A841B /* AppDelegate.rb */,
+				FE1E6E3A153FA0AA008A841B /* FollowerStalkerModel.xcdatamodeld */,
 				FE1E6DE7153E4BCC008A841B /* Resources */,
 				FE1E6DEB153E4BCC008A841B /* Other Sources */,
 				FE1E6DDF153E4BCC008A841B /* Supporting Files */,
@@ -114,6 +139,35 @@
 				FE1E6DEC153E4BCC008A841B /* rb_main.rb */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FE1E6DFC153E4DBF008A841B /* Follow List UI */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6DFD153E4E20008A841B /* FollowListWindow.xib */,
+				FE1E6DFF153E4E6D008A841B /* FollowListWindowController.rb */,
+			);
+			name = "Follow List UI";
+			sourceTree = "<group>";
+		};
+		FE85C60415410ECE00C9376B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE1E6E05153F74F6008A841B /* Follower.rb */,
+				FEC20332153FC9C600FE242B /* TwitterWrapper.rb */,
+				FEC2033515403FE100FE242B /* Run.rb */,
+				FE85C6081541115E00C9376B /* Account.rb */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FE85C60515410ED700C9376B /* Run Detail UI */ = {
+			isa = PBXGroup;
+			children = (
+				FE85C60115410D3E00C9376B /* RunDetailWindow.xib */,
+				FE85C60615410F1500C9376B /* RunDetailWindowController.rb */,
+			);
+			name = "Run Detail UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +243,15 @@
 				FE1E6DEA153E4BCC008A841B /* MainMenu.xib in Resources */,
 				FE1E6DED153E4BCC008A841B /* rb_main.rb in Resources */,
 				FE1E6DEF153E4BCC008A841B /* AppDelegate.rb in Resources */,
+				FE1E6DFE153E4E20008A841B /* FollowListWindow.xib in Resources */,
+				FE1E6E00153E4E6D008A841B /* FollowListWindowController.rb in Resources */,
+				FE1E6E06153F74F6008A841B /* Follower.rb in Resources */,
+				FE1E6E42153FB0AA008A841B /* followerstalker.sqlite in Resources */,
+				FEC20333153FC9C600FE242B /* TwitterWrapper.rb in Resources */,
+				FEC2033615403FE100FE242B /* Run.rb in Resources */,
+				FE85C60215410D3E00C9376B /* RunDetailWindow.xib in Resources */,
+				FE85C60715410F1500C9376B /* RunDetailWindowController.rb in Resources */,
+				FE85C6091541115E00C9376B /* Account.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1E6DE5153E4BCC008A841B /* main.m in Sources */,
+				FE1E6E3C153FA0AA008A841B /* FollowerStalkerModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +407,7 @@
 				FE1E6DF4153E4BCC008A841B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE1E6DF5153E4BCC008A841B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -351,8 +416,22 @@
 				FE1E6DF7153E4BCC008A841B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE1E6E3A153FA0AA008A841B /* FollowerStalkerModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE1E6E3B153FA0AA008A841B /* FollowerStalkerModel.xcdatamodel */,
+			);
+			currentVersion = FE1E6E3B153FA0AA008A841B /* FollowerStalkerModel.xcdatamodel */;
+			path = FollowerStalkerModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE1E6DCA153E4BCC008A841B /* Project object */;
 }

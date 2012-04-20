@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="FollowerStalkerModel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Follower" syncable="YES">
+        <attribute name="handle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitterid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="firstGoneRun" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Run" inverseName="firstGoneFollowers" inverseEntity="Run" syncable="YES"/>
+        <relationship name="firstPresentRun" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Run" inverseName="firstPresentFollowers" inverseEntity="Run" syncable="YES"/>
+    </entity>
+    <entity name="Run" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="runTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="firstGoneFollowers" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Follower" inverseName="firstGoneRun" inverseEntity="Follower" syncable="YES"/>
+        <relationship name="firstPresentFollowers" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Follower" inverseName="firstPresentRun" inverseEntity="Follower" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Run" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Follower" positionX="-90" positionY="177" width="128" height="120"/>
+    </elements>
 </model>
