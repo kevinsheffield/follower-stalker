@@ -17,7 +17,6 @@ class FollowListWindowController < NSWindowController
     def windowDidLoad
         super
         
-        titleLabel.setStringValue "From the code!"
         @followers = []
         @runs = []
         @followerTableView.dataSource = self
@@ -61,13 +60,23 @@ class FollowListWindowController < NSWindowController
         puts "lets add a run!"
         twitterWrapper = TwitterWrapper.new
         puts "in the rabbit hole"
-        #followersReturn = twitterWrapper.getFollowersByUser(accountSelector.selectedItem.title)
-        followersReturn = Array.new
+        followersReturn = twitterWrapper.getFollowersByUser(accountSelector.selectedItem.title)
+        #followersReturn = Array.new
+        #follower_test = Follower.new
+        #follower_test.twitter_id = 1
+        #follower_test.handle = 'bob'
+        #followersReturn << follower_test
+        #follower_test = Follower.new
+        #follower_test.twitter_id = 4
+        #follower_test.handle = 'shannon'
+        #followersReturn << follower_test
         puts "out of the rabbit hole"
         
-        Run.create_new(accountSelector.selectedItem.title, followersReturn)
+        run = Run.create_new(accountSelector.selectedItem.title, followersReturn)
         
         puts "way past"
+        
+        run.compare_against_previous_run()
         
         
         loadRuns()
@@ -91,8 +100,10 @@ class FollowListWindowController < NSWindowController
     def tableView(view, objectValueForTableColumn:column, row:index)
         run = @runs[index]
         case column.identifier
-            when 'handle'
-            run.id.to_s + ':' + run.date_run.to_s
+            when 'run_id'
+                run.id.to_s + ':' + run.date_run.to_s
+            when 'run_info'
+                run.followers_added_count.to_s + ' followers added; ' + run.followers_removed_count.to_s + ' followers removed'
         end
     end
     

@@ -64,7 +64,7 @@ class TwitterWrapper
                 #puts "let's see"
                 #puts friend['id_str']
                 new_follower = Follower.new
-                new_follower.id = friend['id_str']
+                new_follower.twitter_id = friend['id_str']
                 new_follower.handle = friend['screen_name']
                 
                 @followers << new_follower
